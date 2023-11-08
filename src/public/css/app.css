@@ -1,5 +1,33 @@
-h1 {
-  color: green;
+
+
+.name-row{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.container.mt-4 {
+  background-color: #3498db; 
+  padding: 20px; 
+  border-radius: 15px;
+}
+.btn.btn-primary{
+  display: block;
+}
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+.card-deck {
+  margin-bottom: 15px; 
 }
 
-/*# sourceMappingURL=app.css.map */
+.card-deck .card {
+  margin-right: 15px;
+}
+
+.card-deck .card:last-child {
+  margin-right: 0;
+}
